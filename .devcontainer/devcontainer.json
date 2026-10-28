@@ -9,7 +9,14 @@
   "postCreateCommand": "quarto --version",
   "customizations": {
     "vscode": {
-      "extensions": ["quarto.quarto"],
+      "extensions": [
+    "quarto.quarto",
+    "github.copilot",
+    "github.copilot-chat",
+    "openai.chatgpt",  
+    "anthropic.claude-code",
+    "streetsidesoftware.code-spell-checker",
+              ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
       }
