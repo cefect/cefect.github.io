@@ -1,0 +1,85 @@
+---
+title: Software & Data
+description: "Research software for flood-grid downscaling, flood-depth estimation, and flood-risk modelling."
+---
+
+::: {.page-intro}
+I develop software that connects flood research with repeatable analysis and engineering practice.
+My work spans Python, PyTorch, GDAL, and QGIS.
+:::
+
+## Research software
+
+::: {.software-grid}
+::: {.software-item}
+[SUPER-RESOLUTION]{.software-category}
+
+### floodSR
+
+AI super-resolution of flood hazard rasters using low-resolution inundation grids and high-resolution digital elevation models.
+
+**Role:** Lead developer · **Stack:** Python, PyTorch, GDAL
+
+[Repository →](https://github.com/cefect/floodsr)
+:::
+
+::: {.software-item}
+[DOWNSCALING]{.software-category}
+
+### FloodDownscaler2
+
+Flood-grid downscaling with CostGrow resampling, least-cost mapping, and high-and-dry filtering.
+
+**Role:** Lead developer · **Stack:** Python, WhiteboxTools
+
+[Repository →](https://github.com/cefect/FloodDownscaler2)
+:::
+
+::: {.software-item}
+[FLOOD-DEPTH ESTIMATION]{.software-category}
+
+### RICorDE
+
+Gridded water-depth estimation from flood inundation using height above nearest drainage (HAND) and cost-distance extrapolation.
+
+**Role:** Lead developer · **Stack:** PyQGIS, WhiteboxTools
+
+[Repository →](https://github.com/NRCan/RICorDE) · [Methods paper](https://doi.org/10.5194/nhess-22-1437-2022)
+:::
+
+::: {.software-item}
+[RISK MODELLING]{.software-category}
+
+### CanFlood / CanFlood2
+
+QGIS tools for flood-risk modelling, sensitivity analysis, multi-model workflows, and reporting.
+
+**Role:** Lead developer · **Stack:** Python, QGIS
+
+[CanFlood](https://github.com/NRCan/CanFlood) · [CanFlood2 →](https://github.com/cefect/CanFlood2)
+:::
+
+::: {.software-item}
+[VULNERABILITY]{.software-category}
+
+### CanCurve
+
+A QGIS plugin for creating Canadian flood depth-damage functions, with SQLite-backed project data and CanFlood-format exports.
+
+**Role:** Lead developer · **Stack:** Python, QGIS, SQLite
+
+[Repository →](https://github.com/NRCan/CanCurve)
+:::
+:::
+
+## Data and reproducibility
+
+For data supporting published studies, follow the data-availability statements in the [papers](publications.qmd).
+Software documentation, installation requirements, citation instructions, and license terms are maintained in each repository.
+
+USFloods is ongoing research; a public dataset release is not listed here yet.
+
+::: {.contact-strip}
+Interested in using these methods or discussing a collaboration?
+[Get in touch](mailto:sbryant8@wisc.edu).
+:::

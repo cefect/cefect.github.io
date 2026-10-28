@@ -1,0 +1,92 @@
+---
+title: ""
+pagetitle: Seth Bryant
+description: "Civil and environmental engineering research connecting satellite observations, flood modelling, and local impacts."
+title-block-style: none
+---
+
+::: {.home-hero}
+::: {.hero-copy}
+[CIVIL & ENVIRONMENTAL ENGINEERING]{.eyebrow}
+
+# Seth Bryant
+
+[Flood risk, from observation to impact.]{.hero-statement}
+
+I am a **Postdoctoral Research Associate at the University of Wisconsin–Madison**, working in Beth Tellman's lab.
+I combine hydraulic engineering, Earth observation, and research software to understand flooding and improve flood-risk assessment.
+
+My work asks how terrain, infrastructure, spatial resolution, and uncertainty shape estimates of flood hazard and its consequences.
+
+::: {.hero-links}
+[Explore my projects](projects.qmd){.btn .btn-primary}
+[Academic CV](files/seth-bryant-cv.pdf){.btn .btn-outline-primary}
+:::
+
+::: {.profile-links}
+[Email](mailto:sbryant8@wisc.edu) · [GitHub](https://github.com/cefect) · [ORCID](https://orcid.org/0000-0002-8799-3919)
+:::
+:::
+
+::: {.hero-art aria-hidden="true"}
+<div class="art-label">OBSERVE · MODEL · UNDERSTAND</div>
+<img src="assets/brand-waves.svg" alt="" class="brand-waves" />
+<div class="art-caption">Connecting regional predictions<br>with local flood impacts.</div>
+:::
+:::
+
+## Research focus
+
+::: {.research-grid}
+::: {.research-item}
+[01 / HAZARD]{.section-number}
+
+### Flood mapping across scales
+
+Terrain-conditioned downscaling and physics-guided super-resolution connect regional flood grids with the detail needed to examine local inundation.
+
+[Downscaling research →](projects.qmd#flood-super-resolution)
+:::
+
+::: {.research-item}
+[02 / OBSERVATION]{.section-number}
+
+### Learning from observed floods
+
+Multisensor satellite mapping, deep learning, and scalable geospatial processing support flood-event reconstruction and model evaluation.
+
+[Satellite-based projects →](projects.qmd#us-floods)
+:::
+
+::: {.research-item}
+[03 / IMPACT]{.section-number}
+
+### Risk and infrastructure
+
+I examine how spatial aggregation, nonlinear damage relationships, and infrastructure disruption affect estimates of flood losses and access to essential services.
+
+[Related publications →](publications.qmd)
+:::
+:::
+
+::: {.background-grid}
+::: {}
+## Background
+
+I earned a **Doctor of Engineering at the University of Potsdam in 2024**, conducting research with GFZ on aggregation and disaggregation in flood-risk models.
+I previously completed an **MSc in Water Resources Engineering at the University of Alberta** and a **BSc in Civil Engineering at Montana State University**.
+
+My research builds on professional experience in river and hydraulic engineering, flood-risk assessment, and public-sector implementation.
+Alongside academia, I lead [CEFlood](https://ceflood.com), connecting research methods with engineering practice.
+:::
+
+::: {.contact-panel}
+## Work with me
+
+I welcome conversations about flood mapping, model evaluation, spatial scale, and research software.
+
+[sbryant8@wisc.edu](mailto:sbryant8@wisc.edu)
+
+[View publications](publications.qmd) · [Software & Data](software-data.qmd)
+:::
+:::

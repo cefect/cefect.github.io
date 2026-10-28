@@ -1,0 +1,75 @@
+---
+title: Projects
+description: "Research on flood downscaling, satellite-based event mapping, and flood-mitigation infrastructure."
+---
+
+::: {.page-intro}
+My research connects the scale of flood observations and models with the scale at which people and infrastructure experience flooding.
+These selected projects combine physical understanding, satellite evidence, and reproducible software.
+:::
+
+::: {.project-feature}
+[01 / FLOOD HAZARD]{.eyebrow}
+
+## Physics-guided flood super-resolution {#flood-super-resolution}
+
+**Question:** How can coarse flood grids be refined while preserving meaningful relationships with terrain?
+
+I develop terrain-conditioned downscaling methods and the **floodSR** toolkit, using low-resolution flood grids and high-resolution elevation data to estimate finer-scale inundation.
+This work combines deep learning, geospatial processing, and physical constraints.
+
+**My contribution:** Method development and research software engineering, including floodSR and FloodDownscaler2.
+
+**Context:** Natural Resources Canada Flood Hazard Identification and Mapping Program; related downscaling research with Fathom and Beth Tellman's lab.
+
+[floodSR repository](https://github.com/cefect/floodsr){.text-link} · [FloodDownscaler2](https://github.com/cefect/FloodDownscaler2) · [2024 technical note](https://doi.org/10.5194/hess-28-575-2024)
+:::
+
+::: {.project-feature}
+[02 / EARTH OBSERVATION]{.eyebrow}
+
+## U.S. flood-event mapping {#us-floods}
+
+**Question:** How can satellite observations support consistent, high-resolution assessment of inland flooding across events?
+
+I am building **USFloods** through multisensor satellite mapping, deep learning, and scalable geospatial processing.
+The work connects observed flooding with event reconstruction, model evaluation, and uncertainty assessment.
+
+**My contribution:** Co-investigator and research software engineer.
+
+**Context:** “AI-Driven Assessment of U.S. Inland Flood Inundation at High Resolution across the 21st Century,” NCAR EdEc Faculty Innovation Program, 2026–2028; PI: Beth Tellman.
+
+This is ongoing research.
+Published software and data releases will be linked here when available.
+:::
+
+::: {.project-feature}
+[03 / ADAPTATION]{.eyebrow}
+
+## Evaluating flood-mitigation infrastructure {#flood-mitigation}
+
+**Question:** How can observed flooding help evaluate the performance of flood-mitigation infrastructure?
+
+This work uses satellite observations to investigate the flood impacts of adaptation and urban expansion.
+It links Earth observation with questions about infrastructure performance and flood protection.
+
+**My contribution:** Co-investigator, contributing research software engineering and flood-modelling expertise.
+
+**Context:** NSF EAGER, “Satellite-Based Evaluation of U.S. Flood-Mitigation Infrastructure Performance”; PI: Beth Tellman.
+:::
+
+## Related research
+
+::: {.related-work}
+### Spatial scale and flood losses
+
+My doctoral research examined how aggregation and disaggregation affect flood-risk estimates, including bias in hazard grids and nonlinear damage functions.
+
+[Doctoral thesis](https://doi.org/10.25932/publishup-65095) · [Hazard-grid aggregation](https://doi.org/10.1029/2023WR035100) · [Jensen's gap](https://doi.org/10.1111/jfr3.13053)
+
+### Flooding and access to healthcare
+
+Research on flood-induced transportation disruption in Germany examines consequences for access to essential services.
+
+[Read the paper](https://doi.org/10.1038/s43247-025-02645-y)
+:::

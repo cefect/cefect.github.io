@@ -1,0 +1,93 @@
+/*-- scss:defaults --*/
+// Reuse the supplied CEF single-hue blue palette and Office font families.
+$primary: #08519c;
+$secondary: #3182bd;
+$body-bg: #ffffff;
+$body-color: #243345;
+$link-color: #08519c;
+$font-family-sans-serif: Calibri, Carlito, "Segoe UI", sans-serif;
+$headings-font-family: "Calibri Light", Calibri, Carlito, "Segoe UI", sans-serif;
+$font-size-base: 1.12rem;
+$headings-font-weight: 500;
+$navbar-bg: #ffffff;
+$navbar-fg: #243345;
+$navbar-hl: #08519c;
+
+/*-- scss:rules --*/
+// Shared layout and navigation keep the four sections easy to scan.
+:root { --cef-pale: #eff3ff; --cef-line: #dce7ef; --cef-muted: #536579; }
+body { -webkit-font-smoothing: antialiased; }
+.page-columns .content { max-width: 1120px; width: 100%; margin-inline: auto; }
+main.content { padding: 2.8rem 1.4rem 4rem; }
+.navbar { border-bottom: 1px solid var(--cef-line); padding-block: 1rem; }
+.navbar-container { max-width: 1170px; margin: auto; padding-inline: 1.4rem; }
+.navbar-brand { font-weight: 650; font-size: 1.3rem; letter-spacing: -.02em; }
+.navbar-nav { gap: .8rem; }
+.navbar .nav-link { font-size: 1rem; }
+.navbar .nav-link.active { text-decoration: underline; text-underline-offset: .55rem; text-decoration-thickness: 2px; }
+h1, h2, h3 { color: #17334e; letter-spacing: -.025em; }
+h1 { font-size: clamp(2.7rem, 5vw, 3.7rem); margin-bottom: 1.4rem; }
+h2 { font-size: 1.85rem; border-bottom: 0; margin-top: 2.7rem; }
+h3 { font-size: 1.4rem; }
+p { line-height: 1.65; }
+a { text-underline-offset: .2em; }
+a:hover { color: #17334e; }
+a:focus-visible, button:focus-visible { outline: 3px solid #3182bd; outline-offset: 4px; }
+.eyebrow, .section-number, .software-category { color: #08519c; font-size: .76rem; font-weight: 700; letter-spacing: .12em; }
+.page-intro { max-width: 800px; font-size: 1.22rem; color: var(--cef-muted); margin-bottom: 2.5rem; }
+.nav-footer { border-top: 1px solid var(--cef-line); padding: 1.5rem; color: var(--cef-muted); }
+
+// A quiet branded illustration balances the introductory text without a stock photo.
+.home-hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3.5rem; align-items: center; padding: 1rem 0 2rem; }
+.home-hero h1 { font-size: 1.3rem; color: var(--cef-muted); letter-spacing: 0; margin: 1.5rem 0 .9rem; }
+.hero-statement { display: block; font-family: $headings-font-family; font-size: clamp(2.5rem, 4.4vw, 3.65rem); line-height: 1.08; letter-spacing: -.045em; color: #17334e; margin-bottom: 1.6rem; }
+.hero-copy > p { margin-bottom: 1.1rem; }
+.hero-links { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.7rem 0 1rem; }
+.btn { border-radius: 3px; padding: .65rem 1.1rem; font-size: .98rem; }
+.profile-links { font-size: .98rem; }
+.hero-art { align-self: stretch; min-height: 390px; background: #f5f8fc; border-radius: 3px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+.art-label { margin: 2rem 1.7rem; color: #08519c; font-size: .67rem; letter-spacing: .15em; font-weight: 700; }
+.brand-waves { position: absolute; width: 125%; max-width: none; left: -12%; top: 18%; opacity: .9; }
+.art-caption { position: relative; margin: 2rem 1.7rem; font-size: 1.05rem; line-height: 1.4; color: #17334e; }
+
+// Research themes use editorial columns rather than repeating heavy card borders.
+.research-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; margin-top: 1.5rem; }
+.research-item { border-top: 2px solid #9ecae1; padding-top: 1.2rem; }
+.research-item h3 { margin-top: 1rem; }
+.research-item p { font-size: 1.04rem; }
+.background-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 3rem; border-top: 1px solid var(--cef-line); margin-top: 3.5rem; padding-top: .5rem; }
+.contact-panel { background: #f5f8fc; padding: 0 1.6rem 1rem; margin-top: 2rem; }
+.contact-panel h2 { margin-top: 1.4rem; }
+
+// Content entries remain readable as the publication and software lists grow.
+.project-feature { border-top: 1px solid var(--cef-line); padding: 2rem 0 1.3rem; max-width: 900px; }
+.project-feature h2 { margin-top: .8rem; }
+.related-work { max-width: 900px; }
+.related-work h3 { margin-top: 1.7rem; }
+.software-grid { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 3rem; }
+.software-item { border-top: 1px solid var(--cef-line); padding: 1.4rem 0; }
+.software-item h3 { margin-top: .8rem; }
+.software-category { font-size: .7rem; }
+.contact-strip { border-left: 3px solid #3182bd; padding: .5rem 1.3rem; margin-top: 2rem; background: #f5f8fc; }
+.csl-entry { border-top: 1px solid var(--cef-line); padding: 1.2rem 0; margin: 0 !important; line-height: 1.7; }
+.csl-entry > strong { display: block; font-size: 1.2rem; font-weight: 600; }
+.preprint { border-top: 1px solid var(--cef-line); padding-top: 1.5rem; max-width: 900px; }
+.preprint h3 { margin-top: .7rem; }
+
+// Mobile layouts preserve the same reading order and avoid horizontal scrolling.
+@media (max-width: 800px) {
+  main.content { padding: 1.8rem 1.2rem 3rem; }
+  .home-hero, .background-grid { grid-template-columns: 1fr; gap: 1.4rem; }
+  .hero-art { min-height: 260px; }
+  .brand-waves { top: -20%; }
+  .research-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .research-item p { max-width: 640px; }
+  .software-grid { grid-template-columns: 1fr; }
+  .contact-panel { margin-top: 0; }
+  .navbar-nav { gap: .1rem; }
+  .csl-entry { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+// Keep metadata descriptions for search previews without repeating the page intro.
+#title-block-header .description { display: none; }

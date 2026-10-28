@@ -1,0 +1,60 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+
+
+
+*.log
+*.logs
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+#pydev
+.pydevproject
+.project
+.settings
+
+
+#VS Code
+*.code-workspace
+.devcontainer/
+
+#gdal
+*.gpkg-wal
+*.gpkg-shm
+*.aux.xml
+
+# docs
+docs/_build/
+
+#windows shortcuts
+*.lnk
+
+
+_inputs/
+
+_outputs/
+
+# Quarto generated output
+.quarto/
+_site/
+_freeze/
+
+# Track the project development environment.
+!.devcontainer/
+!.devcontainer/**
+!*.code-workspace
+
+/.quarto/
+**/*.quarto_ipynb

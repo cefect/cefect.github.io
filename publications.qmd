@@ -1,0 +1,30 @@
+---
+title: Publications
+description: "Journal articles and preprints on flood hazard, spatial scale, satellite mapping, and flood impacts."
+bibliography: references/publications.bib
+csl: references/academic.csl
+nocite: '@*'
+---
+
+::: {.page-intro}
+Research on flood hazard and risk, Earth observation, spatial scale, and infrastructure impacts.
+[ORCID profile](https://orcid.org/0000-0002-8799-3919) · [Download BibTeX](references/publications.bib)
+:::
+
+## Journal articles
+
+::: {#refs}
+:::
+
+## Preprints
+
+::: {.preprint}
+[2026 · PREPRINT]{.eyebrow}
+
+### Data-driven flood classification to assess climate change effects on riverine compound floods in pre-Alpine catchments
+
+Henrique M. D. Goulart, Lily-belle Sweet, Axel Deijns, **Seth Bryant**, and Benjamin Poschlod.
+*EGUsphere*.
+
+[Preprint and discussion](https://doi.org/10.5194/egusphere-2026-5735)
+:::

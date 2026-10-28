@@ -1,0 +1,18 @@
+{
+  "name": "Personal webpage · Quarto",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true,
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "quarto --version",
+  "customizations": {
+    "vscode": {
+      "extensions": ["quarto.quarto"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}

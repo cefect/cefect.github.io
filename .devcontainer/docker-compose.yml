@@ -1,0 +1,32 @@
+name: personal-webpage
+
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      target: dev
+      args:
+        QUARTO_VERSION: "1.10.19"
+    image: personal-webpage:dev
+    init: true
+    command: sleep infinity
+    working_dir: /workspace
+    volumes:
+      # The project is independent of the CV and Windows brand source folders.
+      - ..:/workspace
+      - quarto-cache:/home/vscode/.cache
+    environment:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    ports:
+      # Bind the preview to localhost rather than exposing it on the LAN.
+      - "127.0.0.1:4200:4200"
+    cpus: 1.0
+    mem_limit: 2g
+    pids_limit: 256
+    stdin_open: true
+    tty: true
+
+volumes:
+  quarto-cache:

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="en-US">
+  <info>
+    <title>Seth Bryant website bibliography</title>
+    <id>https://cefect.github.io/personal_webpage/references/academic</id>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+  </info>
+  <!-- Keep the publication catalogue newest first and display persistent links. -->
+  <citation>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <names variable="author"><name form="short"/></names>
+      <date variable="issued" prefix=", "><date-part name="year"/></date>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="false" entry-spacing="1">
+    <sort>
+      <key variable="issued" sort="descending"/>
+      <key variable="title"/>
+    </sort>
+    <layout suffix=".">
+      <text variable="title" font-weight="bold" suffix=" "/>
+      <group delimiter=". ">
+        <names variable="author"><name and="text" delimiter=", " delimiter-precedes-last="always"/></names>
+        <group delimiter=", ">
+          <text variable="container-title" font-style="italic"/>
+          <text variable="volume"/>
+          <date variable="issued"><date-part name="year"/></date>
+        </group>
+        <text variable="DOI" prefix="https://doi.org/"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>

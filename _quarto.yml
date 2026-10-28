@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - publications.qmd
+    - projects.qmd
+    - software-data.qmd
+  resources:
+    - assets/
+    - files/
+    - references/publications.bib
+
+website:
+  title: Seth Bryant
+  description: "Flood risk modelling, Earth observation, and research software engineering."
+  site-url: https://cefect.github.io/personal_webpage/
+  favicon: assets/favicon.svg
+  search: false
+  open-graph: true
+  navbar:
+    title: Seth Bryant
+    background: light
+    collapse-below: md
+    left:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Publications
+      - href: projects.qmd
+        text: Projects
+      - href: software-data.qmd
+        text: Software & Data
+  page-footer:
+    left: "Seth Bryant · Flood risk & Earth observation"
+    right:
+      - text: Email
+        href: mailto:sbryant8@wisc.edu
+      - text: GitHub
+        href: https://github.com/cefect
+      - text: ORCID
+        href: https://orcid.org/0000-0002-8799-3919
+
+format:
+  html:
+    theme:
+      - cosmo
+      - theme.scss
+    toc: false
+    lang: en
+    page-layout: full
+    anchor-sections: true
+    smooth-scroll: false
+    link-external-newwindow: false
+    email-obfuscation: javascript
+    respect-user-color-scheme: false
+
+execute:
+  enabled: false
